@@ -57,26 +57,7 @@
 			<source src="How to apply a patch.mp4" type="video/mp4">
 		</video>
 	</p>
-	<input type="file" onchange="readFile(this)">
-
-		<script>
-		function readFile(input) {
-		  let file = input.files[0];
-
-		  let reader = new FileReader();
-
-		  reader.readAsText(file);
-
-		  reader.onload = function() {
-		    console.log(reader.result);
-		  };
-
-		  reader.onerror = function() {
-		    console.log(reader.error);
-		  };
-
-		}
-		</script>
+	<div id="textData"></div>
 </html>
 <script src="./require.js"></script>
 <script src="./script.js"></script>
